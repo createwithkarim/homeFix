@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 import { heros } from "@/constants/hero";
@@ -11,7 +10,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Overlay from "./Overlay";
-import { buttonVariants } from "./ui/button";
 
 const Hero = () => {
   return (
@@ -78,7 +76,7 @@ const Hero = () => {
                         delay: 0.6,
                       }}
                     >
-                      <Link
+                      {/* <Link
                         href={`/services/${item.link}`}
                         className={buttonVariants({
                           variant: "default",
@@ -87,7 +85,7 @@ const Hero = () => {
                         })}
                       >
                         {item.cta}
-                      </Link>
+                      </Link> */}
                     </motion.div>
                   </div>
                 </div>

@@ -1,39 +1,27 @@
-export const testimonails = [
+export const testimonials = [
   {
-    id: "1",
-    name: "Norazlina H.",
-    review:
-      "The installation of custom kitchen cabinets at my home in Selangor was truly amazing. The meticulous attention to detail and personalized approach made a real difference. I am very happy with the result.",
+    id: 1,
+    name: "Sarah Johnson",
+    service: "Kitchen Renovation",
+    rating: 5,
+    testimonial:
+      "The Home Fix team transformed our outdated kitchen into a modern, functional space. Their attention to detail and craftsmanship exceeded our expectations. Highly recommended!",
   },
   {
-    id: "2",
-    name: "Mohd Taufiq I.",
-    review:
-      "Their air conditioning service in Malaysia was a real lifesaver during the hot months. Quick response, professional installation, and now my home is a cool oasis. Highly recommended!",
+    id: 2,
+    name: "Michael Rodriguez",
+    service: "Electrical Rewiring",
+    rating: 5,
+    testimonial:
+      "After experiencing frequent power outages, I called Home Fix to inspect our electrical system. They identified the issues quickly and rewired our entire home efficiently. Professional service and fair pricing.",
   },
   {
-    id: "3",
-    name: "Siti Aisyah M.",
-    review:
-      "The waterproofing services provided by this team in Kuala Lumpur are truly the best. They addressed all our concerns and ensured our property stayed dry. Absolutely amazing!",
-  },
-  {
-    id: "4",
-    name: "Mohd Amirul A.",
-    review:
-      "From the initial consultation to the final touches, their home renovation team in Johor Bahru exceeded my expectations. The transformation of my space is beyond what I imagined.",
-  },
-  {
-    id: "5",
-    name: "Siti Emily H.",
-    review:
-      "I hired them for a complete home renovation in Penang, and it was the best decision I made. They delivered on time and within budget, and my home now feels like a dream come true. Highly satisfied!",
-  },
-  {
-    id: "6",
-    name: "Ahmad Fikri Z.",
-    review:
-      "The installation of the air conditioning system in my home in Sabah was crucial. They executed it with precision, and my home is now comfortable all year round. Thank you so much!",
+    id: 3,
+    name: "Jennifer Chen",
+    service: "AC Installation",
+    rating: 5,
+    testimonial:
+      "The team installed our new AC system in just one day. They were knowledgeable, courteous, and left no mess behind. Our home is now comfortable year-round thanks to their expertise.",
   },
 ];
 
