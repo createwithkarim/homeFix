@@ -1,10 +1,10 @@
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-import { Recursive } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const recursive = Recursive({ subsets: ["latin"] });
+const font = Poppins({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata = {
   title: {
@@ -61,7 +61,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn("font-sans antialiased", recursive.className)}>
+      <body className={cn("font-sans antialiased", font.className)}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           {children}
         </ThemeProvider>

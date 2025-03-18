@@ -2,15 +2,12 @@
 import CallToAction from "@/components/CallToAction";
 import Gallary from "@/components/Gallary";
 import Hearder from "@/components/Hearder";
-import { heros } from "@/constants";
+import { heros } from "@/constants/hero";
 import { serviceType } from "@/types/services";
 import { motion } from "framer-motion";
-import { useState } from "react";
 
 const ServiceDetailsPage = ({ params }: { params: { id: string } }) => {
-  const service = heros.find((item: serviceType) => item.link === params.id);
-
-  const [services, setServices] = useState(service);
+  const services = heros.find((item: serviceType) => item.link === params.id);
 
   return (
     services && (

@@ -2,14 +2,12 @@
 
 import { Menu } from "lucide-react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import MaxWidthWrapper from "./shared/MaxWidthWrapper";
 import { buttonVariants } from "./ui/button";
 
 const Navbar = () => {
-  const pathname = usePathname();
   return (
-    <nav className="sticky z-[100] h-14 inset-x-0 top-0 w-full border-b border-border/50 backdrop-blur-lg transition-all">
+    <nav className="sticky z-[100] h-14 inset-x-0 top-0 w-full border-b bg-background border-border/50 backdrop-blur-lg transition-all">
       <MaxWidthWrapper>
         <div className="flex h-14 items-center justify-between">
           <Link href="/" className="flex z-40 font-semibold">

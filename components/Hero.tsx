@@ -1,14 +1,22 @@
-import { cn } from "@/lib/utils";
-import { Check } from "lucide-react";
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import MaxWidthWrapper from "./shared/MaxWidthWrapper";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+
+import { heros } from "@/constants/hero";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Overlay from "./Overlay";
 import { buttonVariants } from "./ui/button";
 
 const Hero = () => {
   return (
     <>
-      {/* <section className="w-full h-[calc(100vh-4rem)]">
+      <section className="w-full h-[calc(100vh)] relative">
         <Swiper
           pagination={{
             clickable: true,
@@ -41,12 +49,12 @@ const Hero = () => {
                       initial={{ y: "100%" }}
                       whileInView={{ y: 0 }}
                       transition={{ duration: 1, ease: "easeInOut" }}
-                      className="text-3xl md:text-7xl leading-10 font-bold uppercase "
+                      className="text-3xl md:text-[48px] max-w-[600px] mx-auto leading-[3.5rem] font-bold uppercase"
                     >
                       {item.heading}
                     </motion.h1>
                   </div>
-                  <div className="overflow-hidden max-w-2xl mx-auto">
+                  <div className="overflow-hidden max-w-xl mx-auto">
                     <motion.p
                       initial={{ y: "100%" }}
                       whileInView={{ y: 0 }}
@@ -71,11 +79,11 @@ const Hero = () => {
                       }}
                     >
                       <Link
-                        href={`services/${item.link}`}
+                        href={`/services/${item.link}`}
                         className={buttonVariants({
                           variant: "default",
                           size: "lg",
-                          className: "text-white",
+                          className: "text-white font-medium",
                         })}
                       >
                         {item.cta}
@@ -87,9 +95,9 @@ const Hero = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </section> */}
+      </section>
 
-      <section className="section-padding">
+      {/* <section className="section-padding">
         <MaxWidthWrapper>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="flex flex-col justify-center gap-4 space-y-1">
@@ -147,7 +155,7 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Hero image */}
+          
             <div>
               <Image
                 src="https://res.cloudinary.com/swiftpos/image/upload/v1697139673/home_fix/dg7bnmqfvw0bog40f3lv.jpg"
@@ -159,7 +167,7 @@ const Hero = () => {
             </div>
           </div>
         </MaxWidthWrapper>
-      </section>
+      </section> */}
     </>
   );
 };
