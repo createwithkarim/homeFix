@@ -8,8 +8,9 @@ const Reviews = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">What Our Customers Say</h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Don't just take our word for it. Here's what our satisfied customers
-            have to say about our home improvement and repair services.
+            Don&apos;t just take our word for it. Here&apos;s what our satisfied
+            customers have to say about our home improvement and repair
+            services.
           </p>
         </div>
 
@@ -40,7 +41,7 @@ const Reviews = () => {
               </div>
 
               <p className="text-muted-foreground flex-grow">
-                "{testimonial.testimonial}"
+                {testimonial.testimonial}
               </p>
             </div>
           ))}
